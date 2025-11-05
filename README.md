@@ -1,6 +1,6 @@
 🛍️ Saint Lux Store - Sistema de Ventas / Mini Tienda
 
-Proyecto final - Lenguaje Visual II (Python + Tkinter + SQLite)
+Proyecto - Lenguaje Visual II (Python + Tkinter + SQLite)
 Autor: Santiago González
 Institución: Universidad del Norte – Sede Caacupé
 Año: 2025
@@ -9,9 +9,9 @@ Año: 2025
 📖 Descripción del proyecto
 
 Saint Lux Store es un sistema de ventas de escritorio desarrollado en Python con la librería Tkinter y una base de datos SQLite3.
-El objetivo es gestionar los productos, realizar ventas, mantener el historial y exportar los datos a CSV, todo dentro de una interfaz visual moderna con la identidad de la marca Saint Lux (negro + dorado).
+El objetivo es gestionar los productos, realizar ventas, mantener el historial y exportar los datos a CSV, todo dentro de una interfaz visual moderna con la identidad de la marca Saint Lux.
 
-Este proyecto forma parte del Trabajo Final Integrador de la materia Lenguaje Visual II, y busca aplicar los conocimientos de programación visual, diseño de interfaz y persistencia de datos.
+Este proyecto forma parte del Trabajo Final Integrador que esta en etapa de desarrollo de la materia Lenguaje Visual II, y busca aplicar los conocimientos de programación visual, diseño de interfaz y persistencia de datos.
 
 
 ⚙️ Tecnologías utilizadas
@@ -68,7 +68,7 @@ Asegúrate de tener Python 3.x instalado.
 
 💾 Base de datos
 
-El sistema genera automáticamente la base de datos saintlux_store.db con las siguientes tablas:
+El sistema genera automáticamente la base de datos Sistema de ventas Saint Lux(Version Demo) con las siguientes tablas:
 
 products → información de productos
 
