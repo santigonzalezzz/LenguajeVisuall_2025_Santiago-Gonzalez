@@ -1,83 +1,82 @@
-🛍️ Saint Lux Store - Sistema de Ventas / Mini Tienda
+# 🛍️ Saint Lux Store - Sistema de Ventas / Mini Tienda
 
-Proyecto - Lenguaje Visual II (Python + Tkinter + SQLite)
-Autor: Santiago González
-Institución: Universidad del Norte – Sede Caacupé
-Año: 2025
+**Proyecto:** Lenguaje Visual II (Python + Tkinter + SQLite)  
+**Autor:** Santiago González  
+**Institución:** Universidad del Norte – Sede Caacupé  
+**Año:** 2025  
 
+---
 
-📖 Descripción del proyecto
+## 📖 Descripción del proyecto
 
-Saint Lux Store es un sistema de ventas de escritorio desarrollado en Python con la librería Tkinter y una base de datos SQLite3.
-El objetivo es gestionar los productos, realizar ventas, mantener el historial y exportar los datos a CSV, todo dentro de una interfaz visual moderna con la identidad de la marca Saint Lux.
+Saint Lux Store es un sistema de ventas de escritorio desarrollado en Python utilizando la librería Tkinter para la interfaz gráfica y SQLite3 como base de datos local. El sistema permite gestionar productos, realizar ventas, llevar un historial detallado de transacciones y exportar la información a archivos CSV para análisis o respaldo.  
 
-Este proyecto forma parte del Trabajo Final Integrador que esta en etapa de desarrollo de la materia Lenguaje Visual II, y busca aplicar los conocimientos de programación visual, diseño de interfaz y persistencia de datos.
+El objetivo de este proyecto es demostrar la aplicación práctica de los conocimientos adquiridos en Lenguaje Visual II, integrando conceptos de programación visual, diseño de interfaces, manejo de base de datos y buenas prácticas de software. Además, el proyecto busca ofrecer una experiencia de usuario intuitiva y moderna, acorde con la identidad de la marca Saint Lux.
 
+Este proyecto representa la versión final, con mejoras y optimizaciones respecto a la demo inicial presentada durante el curso.
 
-⚙️ Tecnologías utilizadas
+---
 
-Python 3.x
+## ⚙️ Tecnologías utilizadas
 
-Tkinter (interfaz gráfica)
+- **Python 3.x**: lenguaje principal del proyecto.  
+- **Tkinter**: para la creación de la interfaz gráfica.  
+- **SQLite3**: base de datos local para persistencia de información.  
+- **CSV**: exportación de datos de productos y ventas.  
+- **ttk.Style / Themes**: personalización visual de la interfaz.  
 
-SQLite3 (base de datos local)
+---
 
-CSV (exportación de datos)
+## 🧩 Mejoras realizadas respecto a la demo
 
-ttk.Style / Themes para personalización de la interfaz
+A diferencia de la demo inicial, en la versión final se implementaron las siguientes mejoras:
 
+- **Login seguro**: ahora se requiere usuario y contraseña para acceder al sistema, mejorando la seguridad básica.  
+- **Gestión de productos optimizada**:  
+  - Corrección de errores al editar o agregar productos.  
+  - Validaciones más robustas (nombre obligatorio, código único, precio y stock enteros).  
+- **Formato de precios en Gs**: todas las cantidades ahora se muestran correctamente en Guaraníes (ej.: Gs 130.000).  
+- **Punto de venta (carrito)**:  
+  - Alertas de stock insuficiente.  
+  - Confirmación de venta funciona correctamente, actualizando el stock y registrando la transacción.  
+  - Total de la venta calculado correctamente y mostrado en la interfaz.  
+- **Historial de ventas completo**:  
+  - Registro detallado de todas las ventas con fecha, total y detalle de productos vendidos.  
+  - Visualización de cada venta, incluyendo cantidad y precio unitario.  
+- **Exportación a CSV mejorada**:  
+  - Ahora el historial de ventas puede exportarse a CSV, mostrando todos los productos de cada venta correctamente.  
+- **Interfaz visual mejorada**:  
+  - Colores negro y dorado (#000000 y #D4AF37) para mantener identidad de marca.  
+  - Diseño limpio, intuitivo y adaptado para pantallas grandes.  
+  - Inclusión opcional de logo `saint_lux_logo.png`.  
 
-🧩 Funcionalidades principales
+---
 
-✅ Gestión de productos (CRUD):
+## 💾 Base de datos
 
-Alta, baja, modificación y búsqueda de productos.
+La base de datos `saintlux_store.db` se genera automáticamente al iniciar el sistema. Contiene las siguientes tablas:
 
-Campos: código, nombre, categoría, talla, precio y stock.
+- `users` → información de usuarios (para login).  
+- `products` → detalles de productos disponibles (código, nombre, categoría, talla, precio, stock, fecha de creación).  
+- `sales` → registro de ventas realizadas (total y fecha).  
+- `sale_items` → productos incluidos en cada venta (cantidad y precio unitario).  
 
-✅ Punto de venta (carrito):
+---
 
-Agregar productos al carrito y confirmar ventas.
+## 🧑‍💻 Autor
 
-Actualización automática del stock.
+**Santiago González**  
+Estudiante de Ingeniería en Informática  
+📘 Universidad del Norte – Sede Caacupé  
+🧩 Asignatura: Lenguaje Visual II  
 
-Cálculo total de la venta.
+---
 
-✅ Historial de ventas:
+## ⚠️ Requisitos
 
-Registro completo con fecha y total.
+- Python 3.x  
+- Librerías estándar: `tkinter`, `sqlite3`, `csv`, `datetime` 
 
-Posibilidad de ver detalle por venta.
+## 🔖 Notas finales
 
-Exportación de ventas a CSV.
-
-✅ Exportación a CSV:
-
-Productos y ventas pueden exportarse a archivos .csv para su respaldo o análisis externo.
-
-✅ Interfaz personalizada:
-
-Paleta de colores: negro (#000000) y dorado (#D4AF37).
-
-Logo opcional saint_lux_logo.png en la cabecera.
-
-Diseño limpio y adaptable.
-
-Asegúrate de tener Python 3.x instalado.
-
-
-💾 Base de datos
-
-El sistema genera automáticamente la base de datos Sistema de ventas Saint Lux(Version Demo) con las siguientes tablas:
-
-products → información de productos
-
-sales → registro de ventas
-
-sale_items → productos por venta
-
-🧑‍💻 Autor
-Santiago González
-Estudiante de Ingeniería en Informática
-📘 Universidad del Norte – Sede Caacupé
-🧩 Asignatura: Lenguaje Visual II
+Esta versión final integra todas las correcciones y mejoras detectadas durante la fase de demo, asegurando la correcta funcionalidad del sistema de ventas y la fidelidad de los datos registrados. Representa un proyecto completo de escritorio con base de datos, interfaz visual y gestión integral de ventas.
